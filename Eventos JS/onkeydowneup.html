@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On key Down e Up</title>
+    <link rel="stylesheet" href="onkeydowneup.css"></link>
+</head>
+<body>
+    <h1>Mouse Out e Over</h1>
+    <p>
+      Os eventos "onkeydown" e "onkeyup" são eventos em JavaScript que são acionados quando uma tecla é pressionada e solta, respectivamente, em um elemento HTML, como um campo de entrada de texto ou uma caixa de texto.
+      O evento "onkeydown" é acionado quando uma tecla é pressionada, independentemente de ela ser solta ou não. Este evento é útil para detectar quando um usuário começa a digitar em um campo de entrada de texto,
+       por exemplo, para iniciar a validação do formulário ou para fornecer sugestões de preenchimento automático.
+       Já o evento "onkeyup" é acionado quando a tecla é solta, após ter sido pressionada. Este evento é útil para detectar quando um usuário terminou de digitar em um campo de entrada de texto e permite que o seu código responda a essa ação,
+        por exemplo, atualizando a página com as informações inseridas pelo usuário.
+Em resumo, os eventos "onkeydown" e "onkeyup" permitem que o seu código responda a ações do usuário ao pressionar e soltar teclas em elementos HTML em uma página web.
+    </p>
+    <br>
+    <input type="text" id="input-text" placeholder="clique aqui e depois Pressione Enter">
+    <p id="resultado"></p>
+    <br>
+    <br>
+    <br>
+    <script>
+      const inputText = document.getElementById("input-text");
+      const resultado = document.getElementById("resultado");
+      
+      inputText.onkeydown = function(event) {
+        if (event.key === "Enter") {
+          resultado.textContent = "Você pressionou a tecla Enter!";
+        }
+      };
+      
+      inputText.onkeyup = function(event) {
+        if (event.key === "Enter") {
+          resultado.textContent = "Você soltou a tecla Enter!";
+        }
+      };
+    </script>
+</body>
+</html>

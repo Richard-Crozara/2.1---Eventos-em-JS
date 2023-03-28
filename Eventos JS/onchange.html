@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchange</title>
+    <link rel="stylesheet" href="onchange.css"></link>
+</head>
+<body>
+    <p id="paragrafo1">
+      <br>
+      O evento "onchange" é um evento em JavaScript que é acionado quando o valor de um elemento HTML, como um input ou select, é alterado pelo usuário.
+
+        Ele é frequentemente utilizado para atualizar uma página web com base nas escolhas do usuário ou para executar uma ação quando um determinado elemento é alterado, Por exemplo,
+        você pode usar o evento onchange para atualizar uma tabela de preços quando um usuário seleciona um produto em um menu suspenso ou para validar se um valor digitado em um campo de formulário é válido.
+    </p>
+    <select id="meuSelect" onchange="alertaPagina()">
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+      </select>
+    <p id="paragrafo2">
+        Neste exemplo, o evento onchange é associado ao elemento select. Quando o usuário seleciona uma opção, a função alertaPagina() é chamada e aparece um alerta
+    </p>
+
+      <script>
+        function alertaPagina() {
+            alert("A OPÇÃO FOI MUDADA!")
+    
+  // Código para atualizar o conteúdo da página
+}
+
+      </script>
+</body>
+</html>

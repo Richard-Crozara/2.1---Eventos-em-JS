@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DblClick</title>
+    <link rel="stylesheet" href="dblclick.css"></link>
+</head>
+<body>
+    <p id="paragrafo1">
+        O atributo ondblclick é utilizado em HTML para definir uma ação que deve ocorrer quando um elemento é clicado duas vezes consecutivas com o botão esquerdo do mouse.
+         Esta ação pode ser um script JavaScript que manipula o elemento, como exibir uma mensagem na tela ou mudar o conteúdo do elemento, entre outras possibilidades. 
+         O ondblclick é um evento de clique que só é acionado quando o usuário clica duas vezes consecutivas no elemento.
+    </p>
+    <br>
+    <button ondblclick="minhaFuncao()">Clique duas vezes em mim</button>
+    <br>
+    <p  id="paragrafo2">
+        Neste exemplo, a função minhaFuncao() será executada sempre que o botão for clicado duas vezes consecutivas, exibindo o alerta
+
+        Usar o ondblclick em elementos HTML pode ser uma forma interessante de melhorar a usabilidade e experiência do usuário em seu site ou aplicação web. 
+        Por exemplo, você pode utilizar o ondblclick em botões para realizar ações específicas que podem ser mais difíceis de serem executadas com apenas um clique, 
+        como realizar ações de edição ou exclusão de dados. É importante lembrar que o ondblclick pode não ser suportado por todos os navegadores, 
+        por isso é sempre importante testar e verificar a compatibilidade do evento com diferentes browsers e dispositivos.
+    <script>
+                function minhaFuncao(){
+            alert("A FUNÇÃO FOI ATIVADA")
+        }
+    </script>
+</body>
+</html>

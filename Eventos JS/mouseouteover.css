@@ -1,0 +1,68 @@
+body, html {
+    background-color: rgb(0, 18, 122);
+}
+
+i#burguer{
+    background-color: rgb(255, 255, 255);
+    color: rgb(187, 186, 186);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+
+menu > ul > li > a {
+    display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  text-align: center;
+  border-top: 2px solid gray;
+  padding: 5px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 3rem;
+  background-color: aquamarine;
+  border-radius: 500px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 13.3px;
+  box-shadow:  0px 5px 20px 0px aquamarine;
+  transition: 300ms ease-in-out;
+  align-items: center;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    font: normal 18pt  Verdana;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
